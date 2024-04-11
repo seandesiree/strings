@@ -17,7 +17,7 @@ def review_keywords(reviews, keywords):
        else:
            return "No keywords were found. "
    else:
-       print("Please enter a review you would like to search. ")
+       return "Please enter a review you would like to search. "
 
 
 while True:
