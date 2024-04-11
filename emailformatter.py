@@ -8,17 +8,13 @@ def email_formatter(email):
        print("Please format your email correctly. ")
 
 
+while True:
+    email = input("Enter your email address: ")
+    result = email_formatter(email)
+    print(result)
 
 
-   while True:
-       email = input("Enter your email address: ")
-       result = email_formatter(email)
-       print(result)
+    continue_search = input("Would you like to search more text? (yes/no) ").lower()
+    if continue_search != 'yes':
+        break
 
-
-       continue_search = input("Would you like to search more text? (yes/no) ").lower()
-       if continue_search != 'yes':
-           break
-
-
-email_formatter(email)
